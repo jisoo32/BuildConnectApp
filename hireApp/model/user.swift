@@ -1,8 +1,9 @@
-//
-//  user.swift
-//  hireApp
-//
-//  Created by snlcom on 6/12/24.
-//
+
 
 import Foundation
+
+struct User: Identifiable {
+    var id = UUID()
+    let userName: String
+    let userImage: String
+}

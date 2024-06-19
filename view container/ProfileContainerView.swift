@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileContainerView: View {
-    private let user: User = User(userName: "현대건설", userImage: "user_16")
+    private let user: User = User(userName: "현대건설지망생", userImage: "user_1")
     
     var body: some View {
         NavigationView {
@@ -23,7 +23,7 @@ struct ProfileContainerView: View {
             .navigationBarTitle("", displayMode: .inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Text("Pankaj Gaikar")
+                        Text("건설환경공학과")
                             .font(Font.system(size: 20, weight: .bold))
                             .padding()
                             .frame(width: UIScreen.main.bounds.size.width / 2, alignment: .leading)

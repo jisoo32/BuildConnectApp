@@ -1,8 +1,13 @@
-//
-//  video.swift
-//  hireApp
-//
-//  Created by snlcom on 6/12/24.
-//
+
 
 import Foundation
+import AVFoundation
+
+struct Video : Identifiable {
+    var id = UUID()
+    var player : AVPlayer
+    var likes: String
+    var comments: String
+    var caption: String
+    var user: User
+}

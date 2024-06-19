@@ -10,11 +10,11 @@ import SwiftUI
 struct MessagesContainerView: View {
     var body: some View {
         NavigationView {
-            Text("Hello, Messages!")
+            Text("메세지 및 비디오챗")
             .navigationBarTitle("", displayMode: .inline)
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Text("Pankaj Gaikar")
+                        Text("user")
                             .font(Font.system(size: 20, weight: .bold))
                             .padding()
                             .frame(width: UIScreen.main.bounds.size.width / 2, alignment: .leading)

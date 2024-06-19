@@ -12,39 +12,37 @@ struct RootContainerView: View {
 
     var body: some View {
         TabView(selection: $selectedView) {
+            ContentView()
+                .tabItem {
+                    selectedView == 1 ? Image(systemName: "person.circle.fill") : Image(systemName: "person.circle")
+                }
+                .tag(1)
             TimeLineContainerView()
                 .tabItem {
                     selectedView == 0 ?
                         Image(systemName: "house.fill") : Image(systemName: "house")
                 }
                 .tag(0)
-            SearchContainerView()
-                .tabItem {
-                    selectedView == 1 ? Image(systemName: "magnifyingglass") : Image(systemName: "magnifyingglass")
-                }
-                .tag(1)
             ReelsContainerView()
                 .tabItem {
                     selectedView == 2 ? Image(systemName: "film.fill") : Image(systemName: "film")
                 }
                 .tag(2)
-            ActivityContainerView()
+            SearchContainerView()
                 .tabItem {
-                    selectedView == 3 ? Image(systemName: "heart.fill") : Image(systemName: "heart")
+                    selectedView == 3 ? Image(systemName: "magnifyingglass") : Image(systemName: "magnifyingglass")
                 }
-                .tag(3)
+                .tag(3)            
             ProfileContainerView()
                 .tabItem {
                     selectedView == 4 ? Image(systemName: "person.circle.fill") : Image(systemName: "person.circle")
                 }
                 .tag(4)
-            
-            ContentView()
+            ActivityContainerView()
                 .tabItem {
-                    selectedView == 5 ? Image(systemName: "person.circle.fill") : Image(systemName: "person.circle")
+                    selectedView == 5 ? Image(systemName: "heart.fill") : Image(systemName: "heart")
                 }
                 .tag(5)
-            
         }
     }
 }
